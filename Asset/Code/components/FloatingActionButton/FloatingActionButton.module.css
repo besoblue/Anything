@@ -1,0 +1,25 @@
+.fab {
+    position: fixed;
+    bottom: var(--spacing-lg);
+    right: var(--spacing-lg);
+    background-color: transparent;
+    color: #9CA3AF;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.2s ease;
+    z-index: 1000;
+    padding: var(--spacing-md);
+}
+
+.fab:hover {
+    color: #000000;
+    /* Black */
+    transform: scale(1.1);
+}
+
+.fab:active {
+    transform: scale(0.95);
+}

@@ -1,0 +1,40 @@
+.iconButton {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    color: var(--color-text-secondary);
+    border: none;
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: all var(--duration-fast) var(--ease-default);
+}
+
+.iconButton:hover:not(:disabled) {
+    background-color: var(--color-hover);
+    color: var(--color-text-primary);
+}
+
+.iconButton:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Sizes */
+.sm {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+}
+
+.md {
+    width: 36px;
+    height: 36px;
+    font-size: 20px;
+}
+
+.lg {
+    width: 44px;
+    height: 44px;
+    font-size: 24px;
+}
