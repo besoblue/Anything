@@ -3,11 +3,8 @@
  */
 class ExportWindowManager {
     private window: Window | null = null;
-    private aspectRatio: 'horizontal' | 'vertical' = 'horizontal';
 
     open(content: string, aspectRatio: 'horizontal' | 'vertical' = 'horizontal'): void {
-        this.aspectRatio = aspectRatio;
-
         if (this.window && !this.window.closed) {
             this.resize(aspectRatio);
             this.update(content);

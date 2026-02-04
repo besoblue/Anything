@@ -1,5 +1,5 @@
 import React from 'react';
-import { Circle, Square, Menu, Mic, MicOff, Globe, Smartphone, Monitor } from 'lucide-react';
+import { Menu, Mic, MicOff, Globe, Smartphone, Monitor } from 'lucide-react';
 import styles from './AppHeader.module.css';
 
 interface AppHeaderProps {

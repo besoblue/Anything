@@ -4,7 +4,7 @@ import { Modal } from '../shared/Modal';
 import { Button } from '../shared/Button';
 import { Input } from '../shared/Input';
 import { Note } from '../../types/note';
-import { exportService, ExportOptions } from '../../services/export';
+import { exportService } from '../../services/export';
 import styles from './ExportModal.module.css';
 
 interface ExportModalProps {
@@ -22,7 +22,6 @@ export const ExportModal: React.FC<ExportModalProps> = ({
     note,
     recordedBlob,
     aspectRatio,
-    onAspectRatioChange,
 }) => {
     const [filename, setFilename] = useState('');
     const [format, setFormat] = useState<'mp4' | 'webm' | 'md'>('webm');

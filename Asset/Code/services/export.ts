@@ -1,5 +1,5 @@
 import { Note } from '../types/note';
-import { downloadFile, formatFilenameDate, sanitizeFilename } from '../utils/file';
+import { downloadFile, sanitizeFilename } from '../utils/file';
 
 export interface ExportOptions {
     format: 'mp4' | 'webm' | 'md' | 'txt';
